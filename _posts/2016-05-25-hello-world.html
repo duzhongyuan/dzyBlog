@@ -1,10 +1,27 @@
 ---
 layout: default
-title: 你好，世界
+title: JavaScript系列
 ---
 
 <h2>{{ page.title }}</h2>
 
-<p>我的第一篇文章</p>
+ <script type="text/javascript">
+       window.onload = function () {
+            var str = document.getElementById("p1").innerHTML;
+            alert(str);        //弹出    我是第一个P
+        }
+ </script>
+
+<p>javascript之DOM操作</p>
 
 <p>{{ page.date | date_to_string }}</p>
+
+<div id="div1">
+    <p id="p1">
+        我是第一个P
+    </p>
+    <p id="p2">
+        我是第二个P
+    </p>
+</div>
+
